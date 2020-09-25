@@ -33,8 +33,12 @@ public class Product {
 		return name + ", " + String.format("%.2f", price);
 	}
 
-	public static String upperCaseName(Product p) {
+	public static String upperCaseNameEstatico (Product p) {// método estático
 		return p.getName().toUpperCase();
+	}
+	
+	public String upperCaseName () {
+		return name.toUpperCase();
 	}
 
 }
